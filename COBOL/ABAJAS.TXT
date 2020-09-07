@@ -1,0 +1,56 @@
+         PRINT NOGEN                                                    00010032
+ABAJAS   DFHMSD TYPE=&SYSPARM,                                         C00020041
+               LANG=COBOL,MAPATTS=(COLOR),                             C00030032
+               MODE=INOUT,                                             C00040042
+               TIOAPFX=YES                                              00050032
+BAJAS    DFHMDI SIZE=(24,80)                                            00060041
+TERMB    DFHMDF ATTRB=PROT,                                            C00070041
+               COLOR=GREEN,                                            C00080032
+               LENGTH=4,                                               C00090032
+               POS=(1,1)                                                00100032
+PROGB    DFHMDF ATTRB=PROT,                                            C00110041
+               COLOR=GREEN,                                            C00120032
+               LENGTH=8,                                               C00130032
+               POS=(1,8)                                                00140032
+FECHB    DFHMDF ATTRB=PROT,                                            C00150041
+               COLOR=GREEN,                                            C00160032
+               LENGTH=10,                                              C00170032
+               POS=(1,69)                                               00180032
+         DFHMDF ATTRB=(PROT,BRT),                                      C00190032
+               LENGTH=15,POS=(2,32),COLOR=YELLOW,                      C00200042
+               INITIAL='BAJA DE CLIENTES'                               00210042
+         DFHMDF ATTRB=(PROT,NORM),                                     C00490042
+               LENGTH=15,                                              C00500042
+               POS=(4,23),                                             C00510042
+               INITIAL='NRO DE CLIENTE:'                                00520042
+TIPCLI   DFHMDF ATTRB=(PROT,NUM),                                      C00530033
+               LENGTH=1,                                               C00540032
+               POS=(4,39)                                               00550044
+         DFHMDF ATTRB=(ASKIP,NORM),LENGTH=0,POS=(4,41)                  00560044
+         DFHMDF ATTRB=(PROT,NORM),                                     C00570042
+               LENGTH=1,                                               C00580032
+               POS=(4,42),                                             C00590044
+               INITIAL='/'                                              00600042
+NROCLI   DFHMDF ATTRB=(PROT,NUM),                                      C00610033
+               LENGTH=9,                                               C00620032
+               POS=(4,44)                                               00630044
+         DFHMDF ATTRB=(ASKIP,NORM),LENGTH=0,POS=(4,54)                  00640044
+MSGBAJ   DFHMDF ATTRB=(PROT,BRT),                                      C00650042
+               COLOR=RED,                                              C00660032
+               INITIAL='                                               C00670032
+                                               ',                      C00680032
+               LENGTH=79,                                              C00690032
+               POS=(22,1)                                               00700032
+         DFHMDF ATTRB=PROT,                                            C00710032
+               INITIAL='-----------------------------------------------C00720032
+               --------------------------------',                      C00730032
+               LENGTH=79,                                              C00740032
+               POS=(23,1)                                               00750032
+         DFHMDF ATTRB=(PROT,BRT),                                      C00760032
+               INITIAL='(PF1) HELP      (ENTER) PROCESO      (PF3) VOLVC00770032
+               ER',                                                    C00780032
+               LENGTH=49,                                              C00790032
+               POS=(24,15)                                              00800032
+         DFHMSD TYPE=FINAL                                              00810032
+         END                                                            00820032
+

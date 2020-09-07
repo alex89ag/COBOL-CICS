@@ -1,0 +1,297 @@
+ACONSU2  DFHMSD TYPE=&SYSPARM,                                         C00010012
+               LANG=COBOL,MAPATTS=(COLOR),                             C00020008
+               MODE=INOUT,HILIGHT=OFF,                                 C00030020
+               TIOAPFX=YES                                              00040008
+CONSU2   DFHMDI SIZE=(24,80)                                            00050012
+TERMC2   DFHMDF ATTRB=PROT,                                            C00060012
+               COLOR=GREEN,                                            C00070012
+               LENGTH=4,                                               C00080012
+               POS=(1,1)                                                00090012
+PROGC2   DFHMDF ATTRB=PROT,                                            C00100012
+               COLOR=GREEN,                                            C00120012
+               LENGTH=8,                                               C00130012
+               POS=(1,8)                                                00131012
+FECHC2   DFHMDF ATTRB=PROT,                                            C00132013
+               COLOR=GREEN,                                            C00133012
+               LENGTH=10,                                              C00134012
+               POS=(1,69)                                               00135012
+         DFHMDF ATTRB=PROT,                                            C00140008
+               COLOR=YELLOW,                                           C00150008
+               INITIAL='CONSULTA DE CLIENTES',                         C00160016
+               LENGTH=20,                                              C00170016
+               POS=(2,30)                                               00180008
+         DFHMDF ATTRB=(PROT,BRT),                                      C00190008
+               COLOR=BLUE,                                             C00200008
+               INITIAL='C',                                            C00210016
+               LENGTH=1,                                               C00220016
+               POS=(3,12)                                               00230016
+         DFHMDF ATTRB=(PROT,BRT),                                      C00240008
+               COLOR=BLUE,                                             C00250008
+               INITIAL='N° CLIENTE',                                   C00260016
+               LENGTH=10,                                              C00270008
+               POS=(3,15)                                               00280016
+         DFHMDF ATTRB=(PROT,BRT),                                      C00290008
+               COLOR=BLUE,                                             C00300008
+               INITIAL='       NOMBRE      ',                          C00310016
+               LENGTH=20,                                              C00320008
+               POS=(3,26)                                               00330016
+         DFHMDF ATTRB=(PROT,BRT),                                      C00340008
+               COLOR=BLUE,                                             C00350008
+               INITIAL='        APELLIDO        ',                     C00360016
+               LENGTH=25,                                              C00370008
+               POS=(3,47)                                               00380016
+                                                                        00390015
+CLI01    DFHMDF ATTRB=PROT,LENGTH=1,POS=(4,12)                          00400016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C00410015
+               LENGTH=0,POS=(4,14)                                      00420015
+                                                                        00430015
+NROC01   DFHMDF ATTRB=PROT,                                            C00440015
+               LENGTH=10,POS=(4,15)                                     00450015
+                                                                        00460015
+NOM01    DFHMDF ATTRB=PROT,                                            C00470016
+               LENGTH=20,POS=(4,26)                                     00480015
+                                                                        00490015
+APE01    DFHMDF ATTRB=PROT,                                            C00500016
+               LENGTH=25,POS=(4,47)                                     00510015
+                                                                        00520015
+CLI02    DFHMDF ATTRB=PROT,LENGTH=1,POS=(5,12)                          00530016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C00540015
+               LENGTH=0,POS=(5,14)                                      00550015
+                                                                        00560015
+NROC02   DFHMDF ATTRB=PROT,                                            C00570015
+               LENGTH=10,POS=(5,15)                                     00580015
+                                                                        00590015
+NOM02    DFHMDF ATTRB=PROT,                                            C00600016
+               LENGTH=20,POS=(5,26)                                     00610015
+                                                                        00620015
+APE02    DFHMDF ATTRB=PROT,                                            C00630016
+               LENGTH=25,POS=(5,47)                                     00640015
+                                                                        00650015
+CLI03    DFHMDF ATTRB=PROT,LENGTH=1,POS=(6,12)                          00660016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C00670015
+               LENGTH=0,POS=(6,14)                                      00680015
+                                                                        00690015
+NROC03   DFHMDF ATTRB=PROT,                                            C00700015
+               LENGTH=10,POS=(6,15)                                     00710015
+                                                                        00720015
+NOM03    DFHMDF ATTRB=PROT,                                            C00730016
+               LENGTH=20,POS=(6,26)                                     00740015
+                                                                        00750015
+APE03    DFHMDF ATTRB=PROT,                                            C00760016
+               LENGTH=25,POS=(6,47)                                     00770015
+                                                                        00780015
+CLI04    DFHMDF ATTRB=PROT,LENGTH=1,POS=(7,12)                          00790016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C00800015
+               LENGTH=0,POS=(7,14)                                      00810015
+                                                                        00820015
+NROC04   DFHMDF ATTRB=PROT,                                            C00830015
+               LENGTH=10,POS=(7,15)                                     00840015
+                                                                        00850015
+NOM04    DFHMDF ATTRB=PROT,                                            C00860016
+               LENGTH=20,POS=(7,26)                                     00870015
+                                                                        00880015
+APE04    DFHMDF ATTRB=PROT,                                            C00890016
+               LENGTH=25,POS=(7,47)                                     00900015
+                                                                        00910015
+CLI05    DFHMDF ATTRB=PROT,LENGTH=1,POS=(8,12)                          00920016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C00930015
+               LENGTH=0,POS=(8,14)                                      00940015
+                                                                        00950015
+NROC05   DFHMDF ATTRB=PROT,                                            C00960015
+               LENGTH=10,POS=(8,15)                                     00970015
+                                                                        00980015
+NOM05    DFHMDF ATTRB=PROT,                                            C00990016
+               LENGTH=20,POS=(8,26)                                     01000015
+                                                                        01010015
+APE05    DFHMDF ATTRB=(PROT),                                          C01020016
+               LENGTH=25,POS=(8,47)                                     01030015
+                                                                        01040015
+CLI06    DFHMDF ATTRB=PROT,LENGTH=1,POS=(9,12)                          01050016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C01060015
+               LENGTH=0,POS=(9,14)                                      01070015
+                                                                        01080015
+NROC06   DFHMDF ATTRB=PROT,                                            C01090015
+               LENGTH=10,POS=(9,15)                                     01100015
+                                                                        01110015
+NOM06    DFHMDF ATTRB=PROT,                                            C01120016
+               LENGTH=20,POS=(9,26)                                     01130015
+                                                                        01140015
+APE06    DFHMDF ATTRB=PROT,                                            C01150016
+               LENGTH=25,POS=(9,47)                                     01160015
+                                                                        01170015
+CLI07    DFHMDF ATTRB=PROT,LENGTH=1,POS=(10,12)                         01180016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C01190015
+               LENGTH=0,POS=(10,14)                                     01200015
+                                                                        01210015
+NROC07   DFHMDF ATTRB=PROT,                                            C01220015
+               LENGTH=10,POS=(10,15)                                    01230015
+                                                                        01240015
+NOM07    DFHMDF ATTRB=PROT,                                            C01250016
+               LENGTH=20,POS=(10,26)                                    01260015
+                                                                        01270015
+APE07    DFHMDF ATTRB=PROT,                                            C01280016
+               LENGTH=25,POS=(10,47)                                    01290015
+                                                                        01300015
+CLI08    DFHMDF ATTRB=PROT,LENGTH=1,POS=(11,12)                         01310016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C01320015
+               LENGTH=0,POS=(11,14)                                     01330015
+                                                                        01340015
+NROC08   DFHMDF ATTRB=PROT,                                            C01350015
+               LENGTH=10,POS=(11,15)                                    01360015
+                                                                        01370015
+NOM08    DFHMDF ATTRB=PROT,                                            C01380016
+               LENGTH=20,POS=(11,26)                                    01390015
+                                                                        01400015
+APE08    DFHMDF ATTRB=PROT,                                            C01410016
+               LENGTH=25,POS=(11,47)                                    01420015
+                                                                        01430015
+CLI09    DFHMDF ATTRB=PROT,LENGTH=1,POS=(12,12)                         01440016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C01450015
+               LENGTH=0,POS=(12,14)                                     01460015
+                                                                        01470015
+NROC09   DFHMDF ATTRB=PROT,                                            C01480015
+               LENGTH=10,POS=(12,15)                                    01490015
+                                                                        01500015
+NOM09    DFHMDF ATTRB=PROT,                                            C01510016
+               LENGTH=20,POS=(12,26)                                    01520015
+                                                                        01530015
+APE09    DFHMDF ATTRB=PROT,                                            C01540016
+               LENGTH=25,POS=(12,47)                                    01550015
+                                                                        01560015
+CLI10    DFHMDF ATTRB=PROT,LENGTH=1,POS=(13,12)                         01570016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C01580015
+               LENGTH=0,POS=(13,14)                                     01590015
+                                                                        01600015
+NROC10   DFHMDF ATTRB=PROT,                                            C01610015
+               LENGTH=10,POS=(13,15)                                    01620015
+                                                                        01630015
+NOM10    DFHMDF ATTRB=PROT,                                            C01640016
+               LENGTH=20,POS=(13,26)                                    01650015
+                                                                        01660015
+APE10    DFHMDF ATTRB=PROT,                                            C01670016
+               LENGTH=25,POS=(13,47)                                    01680015
+                                                                        01690015
+CLI11    DFHMDF ATTRB=PROT,LENGTH=1,POS=(14,12)                         01700016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C01710015
+               LENGTH=0,POS=(14,14)                                     01720015
+                                                                        01730015
+NROC11   DFHMDF ATTRB=PROT,                                            C01740015
+               LENGTH=10,POS=(14,15)                                    01750015
+                                                                        01760015
+NOM11    DFHMDF ATTRB=PROT,                                            C01770016
+               LENGTH=20,POS=(14,26)                                    01780015
+                                                                        01790015
+APE11    DFHMDF ATTRB=PROT,                                            C01800016
+               LENGTH=25,POS=(14,47)                                    01810015
+                                                                        01820015
+CLI12    DFHMDF ATTRB=PROT,LENGTH=1,POS=(15,12)                         01830016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C01840015
+               LENGTH=0,POS=(15,14)                                     01850015
+                                                                        01860015
+NROC12   DFHMDF ATTRB=PROT,                                            C01870015
+               LENGTH=10,POS=(15,15)                                    01880015
+                                                                        01890015
+NOM12    DFHMDF ATTRB=PROT,                                            C01900016
+               LENGTH=20,POS=(15,26)                                    01910015
+                                                                        01920015
+APE12    DFHMDF ATTRB=PROT,                                            C01930016
+               LENGTH=25,POS=(15,47)                                    01940015
+                                                                        01950015
+CLI13    DFHMDF ATTRB=PROT,LENGTH=1,POS=(16,12)                         01960016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C01970015
+               LENGTH=0,POS=(16,14)                                     01980015
+                                                                        01990015
+NROC13   DFHMDF ATTRB=PROT,                                            C02000015
+               LENGTH=10,POS=(16,15)                                    02010015
+                                                                        02020015
+NOM13    DFHMDF ATTRB=PROT,                                            C02030016
+               LENGTH=20,POS=(16,26)                                    02040015
+                                                                        02050015
+APE13    DFHMDF ATTRB=PROT,                                            C02060016
+               LENGTH=25,POS=(16,47)                                    02070015
+                                                                        02080015
+CLI14    DFHMDF ATTRB=PROT,LENGTH=1,POS=(17,12)                         02090016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C02100015
+               LENGTH=0,POS=(17,14)                                     02110015
+                                                                        02120015
+NROC14   DFHMDF ATTRB=PROT,                                            C02130015
+               LENGTH=10,POS=(17,15)                                    02140015
+                                                                        02150015
+NOM14    DFHMDF ATTRB=PROT,                                            C02160016
+               LENGTH=20,POS=(17,26)                                    02170015
+                                                                        02180015
+APE14    DFHMDF ATTRB=PROT,                                            C02190016
+               LENGTH=25,POS=(17,47)                                    02200015
+                                                                        02210015
+CLI15    DFHMDF ATTRB=PROT,LENGTH=1,POS=(18,12)                         02220016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C02230015
+               LENGTH=0,POS=(18,14)                                     02240015
+                                                                        02250015
+NROC15   DFHMDF ATTRB=PROT,                                            C02260015
+               LENGTH=10,POS=(18,15)                                    02270015
+                                                                        02280015
+NOM15    DFHMDF ATTRB=PROT,                                            C02290016
+               LENGTH=20,POS=(18,26)                                    02300015
+                                                                        02310015
+APE15    DFHMDF ATTRB=PROT,                                            C02320016
+               LENGTH=25,POS=(18,47)                                    02330015
+                                                                        02340015
+CLI16    DFHMDF ATTRB=PROT,LENGTH=1,POS=(19,12)                         02350016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C02360015
+               LENGTH=0,POS=(19,14)                                     02370015
+                                                                        02380015
+NROC16   DFHMDF ATTRB=PROT,                                            C02390015
+               LENGTH=10,POS=(19,15)                                    02400015
+                                                                        02410015
+NOM16    DFHMDF ATTRB=PROT,                                            C02420016
+               LENGTH=20,POS=(19,26)                                    02430015
+                                                                        02440015
+APE16    DFHMDF ATTRB=PROT,                                            C02450016
+               LENGTH=25,POS=(19,47)                                    02460015
+                                                                        02470015
+CLI17    DFHMDF ATTRB=PROT,LENGTH=1,POS=(20,12)                         02480016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C02490015
+               LENGTH=0,POS=(20,14)                                     02500015
+                                                                        02510015
+NROC17   DFHMDF ATTRB=PROT,                                            C02520015
+               LENGTH=10,POS=(20,15)                                    02530015
+                                                                        02540015
+NOM17    DFHMDF ATTRB=PROT,                                            C02550016
+               LENGTH=20,POS=(20,26)                                    02560015
+                                                                        02570015
+APE17    DFHMDF ATTRB=PROT,                                            C02580016
+               LENGTH=25,POS=(20,47)                                    02590015
+                                                                        02600015
+CLI18    DFHMDF ATTRB=PROT,LENGTH=1,POS=(21,12)                         02610016
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C02620015
+               LENGTH=0,POS=(21,14)                                     02630015
+                                                                        02640015
+NROC18   DFHMDF ATTRB=PROT,                                            C02650015
+               LENGTH=10,POS=(21,15)                                    02660015
+                                                                        02670015
+NOM18    DFHMDF ATTRB=PROT,                                            C02680016
+               LENGTH=20,POS=(21,26)                                    02690015
+                                                                        02700015
+APE18    DFHMDF ATTRB=PROT,                                            C02710016
+               LENGTH=25,POS=(21,47)                                    02720015
+                                                                        02730015
+MSGCON2  DFHMDF ATTRB=(PROT,BRT),                                      C03251014
+               COLOR=RED,                                              C03252011
+               INITIAL='                                               C03253011
+                                               ',                      C03254011
+               LENGTH=79,                                              C03255011
+               POS=(22,1)                                               03256011
+         DFHMDF ATTRB=(ASKIP,NORM),LENGTH=0,POS=(21,73)                 03260009
+         DFHMDF ATTRB=PROT,                                            C03270008
+               INITIAL='-----------------------------------------------C03280008
+               --------------------------------',                      C03290008
+               LENGTH=79,                                              C03300008
+               POS=(23,1)                                               03310008
+         DFHMDF ATTRB=(PROT,BRT),                                      C03320008
+               INITIAL='PF1 HELP    PF3 VOLVER    ENTER PROCESO    PF7 C03330019
+               RETROCEDER    PF8 AVANZAR',                             C03340019
+               LENGTH=72,                                              C03350019
+               POS=(24,4)                                               03360019
+         DFHMSD TYPE=FINAL                                              03370008
+         END                                                            03380008
+

@@ -1,0 +1,88 @@
+AMENU1   DFHMSD TYPE=&SYSPARM,                                         C
+               LANG=COBOL,MAPATTS=(COLOR),                             C
+               MODE=INOUT,HILIGHT=OFF,                                 C
+               TIOAPFX=YES
+MENU1    DFHMDI SIZE=(24,80)
+TERMM1   DFHMDF ATTRB=PROT,                                            C
+               COLOR=GREEN,                                            C
+               LENGTH=4,                                               C
+               POS=(1,1)
+PROGM1   DFHMDF ATTRB=PROT,                                            C
+               COLOR=GREEN,                                            C
+               LENGTH=8,                                               C
+               POS=(1,8)
+FECHM1   DFHMDF ATTRB=PROT,                                            C
+               COLOR=GREEN,                                            C
+               LENGTH=10,                                              C
+               POS=(1,69)
+         DFHMDF ATTRB=PROT,                                            C
+               COLOR=YELLOW,                                           C
+               INITIAL='ACTUALIZACION ACHIVO DE CLIENTES',             C
+               LENGTH=32,                                              C
+               POS=(2,23)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               COLOR=YELLOW,                                           C
+               INITIAL='1',                                            C
+               LENGTH=1,                                               C
+               POS=(4,31)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='ALTA',                                         C
+               LENGTH=4,                                               C
+               POS=(4,33)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               COLOR=YELLOW,                                           C
+               INITIAL='2',                                            C
+               LENGTH=1,                                               C
+               POS=(5,31)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='BAJA',                                         C
+               LENGTH=4,                                               C
+               POS=(5,33)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               COLOR=YELLOW,                                           C
+               INITIAL='3',                                            C
+               LENGTH=1,                                               C
+               POS=(6,31)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='MODIFICACION',                                 C
+               LENGTH=12,                                              C
+               POS=(6,33)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               COLOR=YELLOW,                                           C
+               INITIAL='4',                                            C
+               LENGTH=1,                                               C
+               POS=(7,31)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='CONSULTA',                                     C
+               LENGTH=8,                                               C
+               POS=(7,33)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               COLOR=GREEN,                                            C
+               INITIAL='OPCION==>',                                    C
+               LENGTH=9,                                               C
+               POS=(9,23)
+OPCION   DFHMDF ATTRB=(UNPROT,IC),HILIGHT=UNDERLINE,                   C
+               LENGTH=1,                                               C
+               POS=(9,33)
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C
+               LENGTH=0,                                               C
+               POS=(9,35)
+MSGMNU1  DFHMDF ATTRB=(PROT,BRT),                                      C
+               COLOR=RED,                                              C
+               INITIAL='                                               C
+                                               ',                      C
+               LENGTH=79,                                              C
+               POS=(20,1)
+         DFHMDF ATTRB=PROT,                                            C
+               INITIAL='-----------------------------------------------C
+               --------------------------------',                      C
+               LENGTH=79,                                              C
+               POS=(23,1)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='(PF1) HELP      (ENTER) PROCESO      (PF3) SALIC
+               R',                                                     C
+               LENGTH=48,                                              C
+               POS=(24,16)
+         DFHMSD TYPE=FINAL
+         END
+

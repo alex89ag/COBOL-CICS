@@ -1,0 +1,70 @@
+         PRINT NOGEN
+AHELP    DFHMSD TYPE=&SYSPARM,                                         C
+               LANG=COBOL,MAPATTS=(COLOR),                             C
+               MODE=INOUT,                                             C
+               TIOAPFX=YES
+HELP     DFHMDI SIZE=(19,50),COLUMN=15,LINE=3
+         DFHMDF ATTRB=(PROT,NORM),                                     C
+               LENGTH=50,                                              C
+               POS=(1,1),                                              C
+               INITIAL='***********************************************C
+               ***'
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               LENGTH=4,POS=(2,23),COLOR=YELLOW,                       C
+               INITIAL='HELP'
+         DFHMDF ATTRB=(PROT,NORM),                                     C
+               LENGTH=12,                                              C
+               POS=(4,1),                                              C
+               INITIAL='AYUDA SOBRE:'
+SOBRE    DFHMDF ATTRB=PROT,                                            C
+               LENGTH=40,                                              C
+               POS=(4,14)
+INFO1    DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='                                            ', C
+               LENGTH=45,                                              C
+               POS=(7,3)
+INFO2    DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='                                             ',C
+               LENGTH=45,                                              C
+               POS=(8,3)
+INFO3    DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='                                             ',C
+               LENGTH=45,                                              C
+               POS=(9,3)
+INFO4    DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='                                             ',C
+               LENGTH=45,                                              C
+               POS=(10,3)
+INFO5    DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='                                             ',C
+               LENGTH=45,                                              C
+               POS=(11,3)
+INFO6    DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='                                             ',C
+               LENGTH=45,                                              C
+               POS=(12,3)
+INFO7    DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='                                             ',C
+               LENGTH=45,                                              C
+               POS=(13,3)
+INFO8    DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='                                             ',C
+               LENGTH=45,                                              C
+               POS=(14,3)
+         DFHMDF ATTRB=PROT,                                            C
+               INITIAL='-----------------------------------------------C
+               ---',                                                   C
+               LENGTH=50,                                              C
+               POS=(16,1)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='(PF3) VOLVER    (PF4) VOLVER A MENU INICIAL',  C
+               LENGTH=43,                                              C
+               POS=(17,3)
+         DFHMDF ATTRB=(PROT,NORM),                                     C
+               LENGTH=50,                                              C
+               POS=(18,1),                                             C
+               INITIAL='***********************************************C
+               ***'
+         DFHMSD TYPE=FINAL
+         END
+

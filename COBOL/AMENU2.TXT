@@ -1,0 +1,94 @@
+         PRINT NOGEN                                                    00010032
+AMENU2   DFHMSD TYPE=&SYSPARM,                                         C00020047
+               LANG=COBOL,MAPATTS=(COLOR),                             C00030032
+               MODE=INOUT,HILIGHT=OFF,                                 C00040042
+               TIOAPFX=YES                                              00050032
+MENU2    DFHMDI SIZE=(24,80)                                            00060047
+TERMM2   DFHMDF ATTRB=PROT,                                            C00070047
+               COLOR=GREEN,                                            C00080032
+               LENGTH=4,                                               C00090032
+               POS=(1,1)                                                00100032
+PROGM2   DFHMDF ATTRB=PROT,                                            C00110047
+               COLOR=GREEN,                                            C00120032
+               LENGTH=8,                                               C00130032
+               POS=(1,8)                                                00140032
+FECHM2   DFHMDF ATTRB=PROT,                                            C00150047
+               COLOR=GREEN,                                            C00160032
+               LENGTH=10,                                              C00170032
+               POS=(1,69)                                               00180032
+LBLTIT   DFHMDF ATTRB=(PROT,BRT),                                      C00190049
+               LENGTH=23,POS=(2,27),COLOR=YELLOW,                      C00200046
+               INITIAL='                       '                        00210045
+         DFHMDF ATTRB=(PROT,BRT),                                      C00220033
+               COLOR=YELLOW,                                           C00230033
+               INITIAL='1',                                            C00240033
+               LENGTH=1,                                               C00250033
+               POS=(4,31)                                               00260033
+         DFHMDF ATTRB=(PROT,BRT),                                      C00270033
+               INITIAL='BUSQUEDA POR NUMERO',                          C00280033
+               LENGTH=19,                                              C00290035
+               POS=(4,33)                                               00300033
+         DFHMDF ATTRB=(PROT,BRT),                                      C00310033
+               COLOR=YELLOW,                                           C00320033
+               INITIAL='2',                                            C00330033
+               LENGTH=1,                                               C00340033
+               POS=(5,31)                                               00350033
+         DFHMDF ATTRB=(PROT,BRT),                                      C00360033
+               INITIAL='BUSQUEDA POR LISTA',                           C00370033
+               LENGTH=18,                                              C00380035
+               POS=(5,33)                                               00390033
+         DFHMDF ATTRB=(PROT,BRT),                                      C00391038
+               COLOR=YELLOW,                                           C00392038
+               INITIAL='3',                                            C00393038
+               LENGTH=1,                                               C00394038
+               POS=(6,31)                                               00395039
+         DFHMDF ATTRB=(PROT,BRT),                                      C00396038
+               INITIAL='BUSQUEDA POR LISTA A PARTIR DE...',            C00397038
+               LENGTH=33,                                              C00398039
+               POS=(6,33)                                               00399038
+         DFHMDF ATTRB=(PROT,BRT),                                      C00400033
+               COLOR=GREEN,                                            C00410033
+               INITIAL='OPCION==>',                                    C00420033
+               LENGTH=9,                                               C00430033
+               POS=(8,23)                                               00440038
+OPCION   DFHMDF ATTRB=(UNPROT,IC),HILIGHT=UNDERLINE,                   C00450043
+               LENGTH=1,                                               C00460033
+               POS=(8,33)                                               00470038
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C00480033
+               LENGTH=0,                                               C00481033
+               POS=(8,35)                                               00482038
+LBLOP1   DFHMDF ATTRB=(PROT,NORM),                                     C00490034
+               LENGTH=15,                                              C00500032
+               POS=(10,23),                                            C00510038
+               INITIAL='               '                                00520033
+TIPCLI   DFHMDF ATTRB=(PROT,NUM),HILIGHT=OFF,                          C00530044
+               LENGTH=1,                                               C00540032
+               POS=(10,40)                                              00550038
+         DFHMDF ATTRB=(ASKIP,NORM),LENGTH=0,POS=(10,42)                 00560038
+LBLBAR   DFHMDF ATTRB=(PROT,NORM),                                     C00570034
+               LENGTH=1,                                               C00580032
+               POS=(10,43),                                            C00590038
+               INITIAL=' '                                              00600033
+NROCLI   DFHMDF ATTRB=(PROT,NUM),HILIGHT=OFF,                          C00610044
+               LENGTH=9,                                               C00620032
+               POS=(10,45)                                              00630038
+         DFHMDF ATTRB=(ASKIP,NORM),LENGTH=0,POS=(10,55)                 00640038
+MSGMNU2  DFHMDF ATTRB=(PROT,BRT),                                      C00650047
+               COLOR=RED,                                              C00660032
+               INITIAL='                                               C00670032
+                                               ',                      C00680032
+               LENGTH=79,                                              C00690032
+               POS=(20,1)                                               00700048
+         DFHMDF ATTRB=PROT,                                            C00710032
+               INITIAL='-----------------------------------------------C00720032
+               --------------------------------',                      C00730032
+               LENGTH=79,                                              C00740032
+               POS=(23,1)                                               00750032
+         DFHMDF ATTRB=(PROT,BRT),                                      C00760032
+               INITIAL='(PF1) HELP      (ENTER) PROCESO      (PF3) VOLVC00770032
+               ER',                                                    C00780032
+               LENGTH=49,                                              C00790032
+               POS=(24,15)                                              00800032
+         DFHMSD TYPE=FINAL                                              00810032
+         END                                                            00820032
+

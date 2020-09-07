@@ -1,0 +1,111 @@
+         PRINT NOGEN
+AALTAS   DFHMSD TYPE=&SYSPARM,                                         C
+               LANG=COBOL,MAPATTS=(COLOR),                             C
+               MODE=INOUT,HILIGHT=OFF,                                 C
+               TIOAPFX=YES
+ALTAS    DFHMDI SIZE=(24,80)
+TERMA    DFHMDF ATTRB=PROT,                                            C
+               COLOR=GREEN,                                            C
+               LENGTH=4,                                               C
+               POS=(1,1)
+PROGA    DFHMDF ATTRB=PROT,                                            C
+               COLOR=GREEN,                                            C
+               LENGTH=8,                                               C
+               POS=(1,8)
+FECHA    DFHMDF ATTRB=PROT,                                            C
+               COLOR=GREEN,                                            C
+               LENGTH=10,                                              C
+               POS=(1,69)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               LENGTH=15,POS=(2,32),                                   C
+               INITIAL='ALTA DE CLIENTE',COLOR=YELLOW
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='NRO CLIENTE:',                                 C
+               LENGTH=12,POS=(4,18)
+CLITPO   DFHMDF ATTRB=(PROT,NORM),POS=(4,39),LENGTH=1
+         DFHMDF ATTRB=(PROT,NORM),                                     C
+               COLOR=GREEN,                                            C
+               INITIAL='/',                                            C
+               LENGTH=1,POS=(4,42)
+CLINRO   DFHMDF ATTRB=(PROT,NORM),POS=(4,44),LENGTH=9
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='NOMBRE:',                                      C
+               LENGTH=7,POS=(5,18)
+CLINOM   DFHMDF ATTRB=(UNPROT,NORM,IC),POS=(5,39),LENGTH=20
+         DFHMDF ATTRB=(ASKIP,NORM),POS=(5,60),LENGTH=0
+LBLAPE   DFHMDF ATTRB=(PROT,ASKIP,BRT),                                C
+               INITIAL='APELLIDO:   ',                                 C
+               LENGTH=12,POS=(6,18)
+CLIAPE   DFHMDF ATTRB=(UNPROT,NORM),POS=(6,39),LENGTH=25
+         DFHMDF ATTRB=(ASKIP,NORM),POS=(6,65),LENGTH=0
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='DOCUMENTO:',                                   C
+               LENGTH=10,POS=(7,18)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='TIPO:',                                        C
+               LENGTH=5,POS=(8,29)
+CLITPD   DFHMDF ATTRB=(UNPROT,NORM),POS=(8,39),LENGTH=4
+         DFHMDF ATTRB=(ASKIP,NORM),POS=(8,44),LENGTH=0
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='NUMERO:',                                      C
+               LENGTH=7,POS=(9,29)
+CLINRD   DFHMDF ATTRB=(UNPROT,NORM,NUM),POS=(9,39),LENGTH=8
+         DFHMDF ATTRB=(ASKIP,NORM),POS=(9,48),LENGTH=0
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='FECHA DE NACIMIENTO:',                         C
+               LENGTH=20,POS=(10,18)
+FECNCD   DFHMDF ATTRB=(UNPROT,NORM),POS=(10,39),LENGTH=2
+         DFHMDF ATTRB=(ASKIP,NORM),POS=(10,42),LENGTH=0
+         DFHMDF ATTRB=(PROT,BRT),INITIAL='/',LENGTH=1,POS=(10,43)
+FECNCM   DFHMDF ATTRB=(UNPROT,NORM),POS=(10,45),LENGTH=2
+         DFHMDF ATTRB=(ASKIP,NORM),POS=(10,48),LENGTH=0
+         DFHMDF ATTRB=(PROT,BRT),INITIAL='/',LENGTH=1,POS=(10,49)
+FECNCA   DFHMDF ATTRB=(UNPROT,NORM),POS=(10,51),LENGTH=4
+         DFHMDF ATTRB=(ASKIP,NORM),POS=(10,56),LENGTH=0
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='DIRECCION:',                                   C
+               LENGTH=10,POS=(11,18)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='CALLE:',                                       C
+               LENGTH=6,POS=(12,29)
+CLICAL   DFHMDF ATTRB=(UNPROT,NORM),POS=(12,39),LENGTH=20
+         DFHMDF ATTRB=(ASKIP,NORM),POS=(12,60),LENGTH=0
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='NUMERO:',                                      C
+               LENGTH=7,POS=(13,29)
+CLICNR   DFHMDF ATTRB=(UNPROT,NORM,NUM),POS=(13,39),LENGTH=6
+         DFHMDF ATTRB=(ASKIP,NORM),POS=(13,46),LENGTH=0
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='PROVINCIA:',                                   C
+               LENGTH=12,POS=(14,18)
+CLIPRO   DFHMDF ATTRB=(UNPROT,NORM,NUM),POS=(14,39),LENGTH=2
+         DFHMDF ATTRB=(ASKIP,NORM),POS=(14,42),LENGTH=0
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='LOCALIDAD:',                                   C
+               LENGTH=10,POS=(15,18)
+CLILOC   DFHMDF ATTRB=(UNPROT,NORM,NUM),POS=(15,39),LENGTH=3
+         DFHMDF ATTRB=(ASKIP,NORM),POS=(15,43),LENGTH=0
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='CODIGO POSTAL:',                               C
+               LENGTH=14,POS=(16,18)
+CLIZIP   DFHMDF ATTRB=(UNPROT,NORM,NUM),POS=(16,39),LENGTH=6
+         DFHMDF ATTRB=(ASKIP,NORM),POS=(16,46),LENGTH=0
+MSGALT   DFHMDF ATTRB=(PROT,BRT),                                      C
+               COLOR=RED,                                              C
+               INITIAL='                                               C
+                                               ',                      C
+               LENGTH=79,                                              C
+               POS=(20,1)
+         DFHMDF ATTRB=PROT,                                            C
+               INITIAL='-----------------------------------------------C
+               --------------------------------',                      C
+               LENGTH=79,                                              C
+               POS=(23,1)
+         DFHMDF ATTRB=(PROT,BRT),                                      C
+               INITIAL='(PF1) HELP      (PF3) VOLVER     (PF4) MENU INIC
+               CIAL',                                                  C
+               LENGTH=51,                                              C
+               POS=(24,14)
+         DFHMSD TYPE=FINAL
+         END
+
